@@ -81,25 +81,7 @@ Example:
 </html>
 ```
 Output:
-<!DOCTYPE html>
-<html>
-<head>
-    <title>HTML Layout</title>
-    <style>
-        #header, #footer { background-color: #333; color: white; padding: 10px; }
-        #nav, #sidebar { background-color: #f0f0f0; padding: 10px; }
-        #content { padding: 20px; } 
-    </style>
-</head>
-<body>
-    <div id="header">Header</div>
-    <div id="nav">Navigation</div>
-    <div id="content">Main Content</div>
-    <div id="sidebar">Sidebar</div>
-    <div id="footer">Footer</div>
-</body>
-</html>
-<br>
+![Layout2](slike/lt2.png)
 
 ```html
 In this example:
@@ -175,58 +157,9 @@ Examples of Structural Elements in Use
 </body>
 </html>
 ```
+
 Output:
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; font-size:20px;}
-        header { background-color: #8569ff; padding: 20px;}
-        nav{ background-color: #a08bff; padding: 20px;}
-        nav ul { list-style-type: none; padding: 0; text-align:center; }
-        a{color:black; font-size: 20px; text-decoration: none; }
-        nav li a{ text-transform: uppercase; padding: 0 10px;}
-        nav li { display: inline; margin-right: 10px; }
-        main { background-color: #b6ade0; padding:35px;}
-        section{background-color: #b2a0ff; padding: 20px;}
-        article{background-color: #a18cff; margin-top:20px; padding: 20px;}
-        aside { background-color: #645b8e; padding: 20px;}
-        footer { background-color: #795bff; text-align: center; font-size: 20px; padding: 20px;}
-    </style>
-</head>
-<body>
-    <header>
-        <nav>
-           <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>Welcome to our website!</p>
-        </section>
-        <article>
-            <h2>Latest News</h2>
-            <p>This is a news article example.</p>
-        </article>
-    </main>
-    <aside>
-        <h2>Related Links</h2>
-        <ul>
-            <li><a href="#link1">Link 1</a></li>
-            <li><a href="#link2">Link 2</a></li>
-        </ul>
-    </aside>
-    <footer>
-        <p>&copy; 2026 Your Website. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-<br>
+![Layout3](slike/lt3.png)
 
 ```html
 In this example:
@@ -285,33 +218,9 @@ Examples
 </body>
 </html>
 ```
+
 Output:
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        .container {
-            display: flex;
-            justify-content:space-between;
-            background-color: lightgray;
-            padding: 20px;
-        }
-        .item {
-            background-color: white;
-            padding: 20px;
-            border: 1px solid #ccc;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="item">Item 1</div>
-        <div class="item">Item 2</div>
-        <div class="item">Item 3</div>
-    </div>
-</body>
-</html>
-<br>
+![Layout4](slike/lt4.png)
 
 ```
 In this example:
@@ -361,37 +270,9 @@ Examples
 </body>
 </html>
 ```
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        .grid-container {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            gap: 10px;
-            background-color: lightgray;
-            padding: 20px;
-        }
-        .grid-item {
-            background-color: white;
-            padding: 20px;
-            text-align: center;
-            border: 1px solid #ccc;
-        }
-    </style>
-</head>
-<body>
-    <div class="grid-container">
-        <div class="grid-item">Item 1</div>
-        <div class="grid-item">Item 2</div>
-        <div class="grid-item">Item 3</div>
-        <div class="grid-item">Item 4</div>
-        <div class="grid-item">Item 5</div>
-        <div class="grid-item">Item 6</div>
-    </div>
-</body>
-</html>
-<br>
+
+Output:
+![Layout5](slike/lt5.png)
 
 ```
 In this example:
