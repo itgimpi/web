@@ -1,0 +1,304 @@
+border – Podešava debljinu okvira oko tabele (npr. border="1").
+width i height – Određuju širinu i visinu tabele ili pojedinačnih ćelija u pikselima ili procentima (npr. width="50%").
+bgcolor – Menja boju pozadine tabele, reda ili pojedinačne ćelije (npr. bgcolor="red").
+
+align – Poravnava celu tabelu na stranici ili tekst unutar ćelija (vrednosti: left, center, right).
+valign – Vertikalno poravnava tekst unutar ćelija (vrednosti: top, middle, bottom).
+
+cellpadding – Podešava razmak između ivice ćelije i teksta unutar nje.
+cellspacing – Podešava razmak između samih ćelija.
+
+
+
+<!-- tabela 3 x 3 -->
+<p> tabela 3x3</p>
+<table>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+</table>
+
+<p> tabela 3x3 + border</p>
+<table border = "1">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+</table>
+<br>
+
+
+<p> tabela 3x3 + border + h</p>
+<table border = "1">
+    <tr>
+        <th>1</td>
+        <th>2</td>
+        <th>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+</table>
+<br>
+
+<p> tabela 3x3 + border + h</p>
+<table border = "1">
+    <tr>
+        <th>1</td>
+        <th>2</td>
+        <th>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <th>1</td>
+        <th>2</td>
+        <th>3</td>
+    </tr>
+</table>
+<br>
+
+<p> tabela 3x3 + border + width1</p>
+<table border = "1" width = "500">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+</table>
+<br>
+
+<p> tabela 3x3 + border + width2</p>
+<table border = "1" width = "50%">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+</table>
+<br>
+
+<p> tabela 3x3 + border + width2 + height</p>
+<table border = "1" width = "50%" height = "50%">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+</table>
+<br>
+
+<p> tabela 3x3 + border + width2 + height + bgcolor</p>
+<table border = "1" width = "50%" height = "50%" bgcolor = "gray">
+    <tr bgcolor = "blue">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td bgcolor = "red">1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+</table>
+<br>
+
+<p> tabela 3x3 + border + width2 + height + bgcolor + align</p>
+<table border = "1" width = "50%" height = "50%" bgcolor = "gray" align = "center">
+    <tr bgcolor = "blue" align = "left">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td bgcolor = "red" align = "right">1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td  align = "center">1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+</table>
+<br>
+
+<p> tabela 3x3 + border + width2 + height + bgcolor + align + valign</p>
+<table border = "1" width = "50%" height = "50%" bgcolor = "gray" align = "center" valign = "middle">
+    <tr bgcolor = "blue" align = "left">
+        <td valign = "top">1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td bgcolor = "red" align = "right" valign = "bottom">1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td  align = "center">1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+</table>
+<br>
+
+<!-- TABELA 1: Bez cellpadding-a (Tekst je zbijen uz ivice) -->
+<table border="1">
+  <tr>
+    <td>Tesno</td>
+    <td>Tesno</td>
+  </tr>
+</table>
+
+<br>
+
+<!-- TABELA 2: Sa cellpadding="15" (Dodato 15 piksela prostora sa svih strana) -->
+<table border="1" cellpadding="15">
+  <tr>
+    <td>Odma drukše</td>
+    <td>Malo bolje</td>
+  </tr>
+</table>
+
+<!-- TABELA 1: Veliki razmak između ćelija (široke praznine) -->
+<table border="1" cellspacing="15">
+  <tr>
+    <td>Ćelija 1</td>
+    <td>Ćelija 2</td>
+  </tr>
+  <tr>
+    <td>Ćelija 3</td>
+    <td>Ćelija 4</td>
+  </tr>
+</table>
+
+<br>
+
+<table border="1" cellspacing="0" cellpadding="8">
+  
+  <tr>
+    <!-- Ova ćelija spaja 2 kolone u 1 -->
+    <td colspan="2">1</td>
+  </tr>
+  
+  <tr>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+  
+
+  
+</table>
+
+<br>
+
+<table border="1" cellpadding="8">
+  
+  <tr>
+    <!-- Ova ćelija spaja 2 reda -->
+    <td rowspan="2">1</td>
+    <td>2</td>
+  </tr>
+  
+  <tr>
+
+    <td>3</td>
+  </tr>
+  
+
+  
+</table>
+<br>
+
+<table border="1" cellpadding="8">
+  
+  <tr>
+    <th>Smena</th>
+    <th>Dan</th>
+    <th>Radnik</th>
+  </tr>
+  
+  <tr>
+    <!-- Ova ćelija se spaja naniže kroz 2 reda -->
+    <td rowspan="2">Smena 1</td>
+    <td>Ponedeljak</td>
+    <td>Marko</td>
+  </tr>
+  
+  <tr>
+    <!-- Ovde NE PIŠEMO prvu ćeliju, jer je "Smena 1" zauzela ovo mesto -->
+    <td>Utorak</td>
+    <td>Nikola</td>
+  </tr>
+  
+</table>
+
