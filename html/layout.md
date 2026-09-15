@@ -30,6 +30,30 @@ Example:
 </body>
 </html>
 ```
+Output:
+<html>
+<head>
+  <style>
+    table { width: 100%; border-collapse: collapse;}
+    td { border: 1px solid black; padding: 10px; text-align: center;}
+  </style>
+</head>
+<body>
+<table>
+  <tr>
+    <td colspan="3">Header</td>
+  </tr>
+  <tr>
+    <td>Navigation</td>
+    <td>Main Content</td>
+    <td>Sidebar</td>
+  </tr>
+  <tr>
+    <td colspan="3">Footer</td>
+  </tr>
+</table>
+</body>
+</html>
 
 In this example:
 ```html
@@ -77,6 +101,27 @@ Example:
 </body>
 </html>
 ```
+Output:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Layout</title>
+    <style>
+        #header, #footer { background-color: #333; color: white; padding: 10px; }
+        #nav, #sidebar { background-color: #f0f0f0; padding: 10px; }
+        #content { padding: 20px; } 
+    </style>
+</head>
+<body>
+    <div id="header">Header</div>
+    <div id="nav">Navigation</div>
+    <div id="content">Main Content</div>
+    <div id="sidebar">Sidebar</div>
+    <div id="footer">Footer</div>
+</body>
+</html>
+<br>
+
 ```html
 In this example:
 ⦁ CSS Styling (<style> in <head>):
@@ -151,6 +196,59 @@ Examples of Structural Elements in Use
 </body>
 </html>
 ```
+Output:
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; font-size:20px;}
+        header { background-color: #8569ff; padding: 20px;}
+        nav{ background-color: #a08bff; padding: 20px;}
+        nav ul { list-style-type: none; padding: 0; text-align:center; }
+        a{color:black; font-size: 20px; text-decoration: none; }
+        nav li a{ text-transform: uppercase; padding: 0 10px;}
+        nav li { display: inline; margin-right: 10px; }
+        main { background-color: #b6ade0; padding:35px;}
+        section{background-color: #b2a0ff; padding: 20px;}
+        article{background-color: #a18cff; margin-top:20px; padding: 20px;}
+        aside { background-color: #645b8e; padding: 20px;}
+        footer { background-color: #795bff; text-align: center; font-size: 20px; padding: 20px;}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+           <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to our website!</p>
+        </section>
+        <article>
+            <h2>Latest News</h2>
+            <p>This is a news article example.</p>
+        </article>
+    </main>
+    <aside>
+        <h2>Related Links</h2>
+        <ul>
+            <li><a href="#link1">Link 1</a></li>
+            <li><a href="#link2">Link 2</a></li>
+        </ul>
+    </aside>
+    <footer>
+        <p>&copy; 2026 Your Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+<br>
+
 ```html
 In this example:
 ⦁ CSS Styling (<style> in <head>):
@@ -208,6 +306,34 @@ Examples
 </body>
 </html>
 ```
+Output:
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            display: flex;
+            justify-content:space-between;
+            background-color: lightgray;
+            padding: 20px;
+        }
+        .item {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+</html>
+<br>
+
 ```
 In this example:
 ⦁ HTML Structure:
@@ -256,6 +382,37 @@ Examples
 </body>
 </html>
 ```
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            background-color: lightgray;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div>
+        <div class="grid-item">Item 5</div>
+        <div class="grid-item">Item 6</div>
+    </div>
+</body>
+</html>
+<br>
 
 ```
 In this example:
@@ -340,6 +497,63 @@ Expected Output: A web page with a header at the top, a navigation bar on the le
 </html>
 ```
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Two-Column Layout</title>
+    <style>
+     body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+    header, footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+    .container {
+    display: flex;
+    flex: 1;
+}
+    nav {
+    width: 200px;
+    background-color: #e4e4e4;
+    padding: 20px;
+}
+    main {
+    flex: 1;
+    padding: 20px;
+}
+    </style>
+</head>
+<body>
+<header>
+    <h1>My Website</h1>
+</header>
+    <div class=”container”>
+    <nav>
+    <ul>
+    <li><a href=”#”>Home</a>    </li>
+    <li><a href=”#”>About</a></li>
+    <li><a href=”#”>Services</a></li>
+    <li><a href=”#”>Contact</a></li>
+    </ul>
+    </nav>
+<main>
+    <h2>Welcome to My Website</h2>
+    <p>This is the main content area.</p>
+</main>
+</div>
+    <footer>
+    <p>&copy; 2024 My Website</p>
+    </footer>
+</body>
+</html>
+<br>
+
 Scenario 2: Three-Column Layout with Flexbox
 Objective: Create a three-column layout using Flexbox with a header and footer.
 Expected Output: A web page with a header at the top, three columns (navigation, main content, and sidebar) in the middle, and a footer at the bottom.
@@ -413,6 +627,72 @@ Expected Output: A web page with a header, navigation, main content, and footer 
 </body>
 </html>
 ```
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Layout</title>
+<style>
+    body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+    header, footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+    .container {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+    nav {
+    width: 200px;
+    background-color: #e4e4e4;
+    padding: 20px;
+}
+    main {
+    flex: 1;
+    padding: 20px;
+}
+    @media (max-width: 768px) {
+    .container {
+    flex-direction: column;
+}
+    nav, main {
+    width: 100%;
+}
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>My Website</h1>
+</header>
+    <div class=”container”>
+    <nav>
+    <ul>
+     <li><a href=”#”>Home</a></li>
+     <li><a href=”#”>About</a></li>
+     <li><a href=”#”>Services</a></li>
+     <li><a href=”#”>Contact</a></li>
+    </ul>
+    </nav>
+<main>
+    <h2>Main Content Area</h2>
+    <p>This is the main content area.</p>
+</main>
+</div>
+<footer>
+    <p>&copy; 2024 My Website</p>
+</footer>
+</body>
+</html>
+
 
 Scenario 4: Layout with Grid
 Objective: Create a layout using CSS Grid with a header, navigation, main content, sidebar, and footer.
