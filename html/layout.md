@@ -31,29 +31,8 @@ Example:
 </html>
 ```
 Output:
-<html>
-<head>
-  <style>
-    table { width: 100%; border-collapse: collapse;}
-    td { border: 1px solid black; padding: 10px; text-align: center;}
-  </style>
-</head>
-<body>
-<table>
-  <tr>
-    <td colspan="3">Header</td>
-  </tr>
-  <tr>
-    <td>Navigation</td>
-    <td>Main Content</td>
-    <td>Sidebar</td>
-  </tr>
-  <tr>
-    <td colspan="3">Footer</td>
-  </tr>
-</table>
-</body>
-</html>
+![Layout1](slike/lt1.png)
+
 
 In this example:
 ```html
