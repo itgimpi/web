@@ -295,6 +295,7 @@ CSS Layout Techniques: Modern methods like Flexbox, Grid, and CSS frameworks to 
 ```
 
 Practice Scenarios
+
 Scenario 1: Basic Two-Column Layout
 Objective: Create a basic two-column layout with a header, navigation, main content, and footer.
 Expected Output: A web page with a header at the top, a navigation bar on the left, main content on the right, and a footer at the bottom.
@@ -351,68 +352,13 @@ Expected Output: A web page with a header at the top, a navigation bar on the le
 </main>
 </div>
     <footer>
-    <p>&copy; 2024 My Website</p>
+    <p>&copy; 2026 My Website</p>
     </footer>
 </body>
 </html>
 ```
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Two-Column Layout</title>
-    <style>
-     body {
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-    header, footer {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-}
-    .container {
-    display: flex;
-    flex: 1;
-}
-    nav {
-    width: 200px;
-    background-color: #e4e4e4;
-    padding: 20px;
-}
-    main {
-    flex: 1;
-    padding: 20px;
-}
-    </style>
-</head>
-<body>
-<header>
-    <h1>My Website</h1>
-</header>
-    <div class=”container”>
-    <nav>
-    <ul>
-    <li><a href=”#”>Home</a>    </li>
-    <li><a href=”#”>About</a></li>
-    <li><a href=”#”>Services</a></li>
-    <li><a href=”#”>Contact</a></li>
-    </ul>
-    </nav>
-<main>
-    <h2>Welcome to My Website</h2>
-    <p>This is the main content area.</p>
-</main>
-</div>
-    <footer>
-    <p>&copy; 2024 My Website</p>
-    </footer>
-</body>
-</html>
-<br>
+![Layout6](slike/lp1.png)
 
 Scenario 2: Three-Column Layout with Flexbox
 Objective: Create a three-column layout using Flexbox with a header and footer.
@@ -482,83 +428,20 @@ Expected Output: A web page with a header, navigation, main content, and footer 
 </main>
 </div>
 <footer>
-    <p>&copy; 2024 My Website</p>
+    <p>&copy; 2026 My Website</p>
 </footer>
 </body>
 </html>
 ```
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Responsive Layout</title>
-<style>
-    body {
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-    header, footer {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-}
-    .container {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-}
-    nav {
-    width: 200px;
-    background-color: #e4e4e4;
-    padding: 20px;
-}
-    main {
-    flex: 1;
-    padding: 20px;
-}
-    @media (max-width: 768px) {
-    .container {
-    flex-direction: column;
-}
-    nav, main {
-    width: 100%;
-}
-}
-</style>
-</head>
-<body>
-<header>
-    <h1>My Website</h1>
-</header>
-    <div class=”container”>
-    <nav>
-    <ul>
-     <li><a href=”#”>Home</a></li>
-     <li><a href=”#”>About</a></li>
-     <li><a href=”#”>Services</a></li>
-     <li><a href=”#”>Contact</a></li>
-    </ul>
-    </nav>
-<main>
-    <h2>Main Content Area</h2>
-    <p>This is the main content area.</p>
-</main>
-</div>
-<footer>
-    <p>&copy; 2024 My Website</p>
-</footer>
-</body>
-</html>
+![Layout7](slike/lp3.png)
 
 
 Scenario 4: Layout with Grid
 Objective: Create a layout using CSS Grid with a header, navigation, main content, sidebar, and footer.
 Expected Output: A web page with a grid-based layout including all specified sections.
 
-Output:
+
 
 
 
